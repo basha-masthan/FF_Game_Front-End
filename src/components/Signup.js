@@ -25,7 +25,8 @@ function Signup() {
   const handleOtpSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/verify-otp', {
+      
+      const res = await axios.post('https://ff-game-back-end.vercel.app/api/verify-otp', {
         email: formData.email,
         otp,
       });

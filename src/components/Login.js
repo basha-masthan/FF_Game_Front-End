@@ -11,7 +11,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/login', { email, password });
+      const response = await axios.post('https://ff-game-back-end.vercel.app/api/login', { email, password });
       console.log('Login response:', response.data);
       localStorage.setItem('userId', response.data.user.id); // Store userId
       navigate('/home');
