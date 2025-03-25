@@ -1,21 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Landing from './components/Landing';
-import Signup from './components/Signup';
-import Login from './components/Login';
-import Home from './components/Home';
-import './App.css';
+import React from "react";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-      </Routes>
-    </Router>
+    <div>
+      <h1>Welcome to Free Fire Tournament</h1>
+      <p>This is the home page.</p>
+    </div>
   );
 }
 
